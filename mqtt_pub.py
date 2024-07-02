@@ -14,7 +14,7 @@ client = mqtt.Client(client_id="MQTT_PYTHON_PUBLISHER")
 client.on_connect = on_connect
 
 # Подключение к брокеру
-client.connect("localhost", 1883, 60)
+client.connect("192.168.1.239", 1883, 60)
 
 # Запуск бесконечного цикла обработки сети
 client.loop_forever()
